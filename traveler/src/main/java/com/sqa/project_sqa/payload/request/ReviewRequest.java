@@ -4,18 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.sql.Date;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
-public class SignupRequest {
-    private String name;
-
-    private String userName;
-
-    private String password;
-
-    private String email;
-
-    private String phone;
+public class ReviewRequest {
+    private String content;
+    private int rating;
+    private Date time;
+    private int userId;
+    private int hotelId;
 }

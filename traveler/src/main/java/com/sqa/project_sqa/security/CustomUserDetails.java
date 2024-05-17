@@ -32,7 +32,7 @@ public class CustomUserDetails implements UserDetails {
     public static CustomUserDetails mapUserToUserDetail(User user) {
         GrantedAuthority authority = new SimpleGrantedAuthority(user.getRole().name());
         return new CustomUserDetails(
-                user.getUserId(),
+                user.getId(),
                 user.getName(),
                 user.getEmail(),
                 user.getUserName(),

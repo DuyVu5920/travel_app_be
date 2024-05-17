@@ -16,7 +16,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-
     @PostMapping("/signup")
     public ResponseEntity<?> signupClient(@RequestBody SignupRequest signupRequest){
         try{
